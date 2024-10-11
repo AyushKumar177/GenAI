@@ -1,0 +1,939 @@
+{"intents": [
+	{
+	  "tag": "greeting",
+	  "patterns": [
+		"Hi there",
+		"How are you",
+		"Is anyone there?",
+		"Hey",
+		"Hello",
+		"Good morning",
+		"good afternoon"
+	  ],
+	  "responses": [
+		"Hello! How can I assist you today?",
+		"Hi there! How can I help you?",
+		"Hey! What can I do for you?",
+		"Hi! How are you feeling today?",
+		"Hello! How may I assist you?",
+		"Good day! How can I be of service?",
+		"Good morning. I hope you had a good night's sleep. How are you feeling today? "
+	  ],
+	  "context_set": ""
+	},	  
+	{
+	  "tag": "CreatorInformation",
+	  "patterns": [
+		"Who created you?",
+		"Who is your creator?"
+	  ],
+	  "responses": [
+		"Ayush Kumar is the brilliant mind behind my creation. Currently, Ayush is pursuing a bachelor's degree in Computer Science & Engineering from IIIT Bhagalpur,Bihar.",
+		"My creator is Ayush Kumar, who is passionate about AI & ML and is currently studying at IIIT Bhagalpur,Bihar."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "name",
+	 "patterns": [
+		  "My name is ",
+		  "I am name.",
+		  "I go by "
+		  ],
+	  "responses": [
+		   "Oh nice to meet you. Tell me how was your week?",
+		   "Nice to meet you. So tell me. How do you feel today?",
+		   "That's a great name. Tell me more about yourself."
+	  ]
+	},     
+	{
+	  "tag": "Introduction",
+	  "patterns": [
+		"Who can you? do",
+		"what will you do",
+		"What are you?",
+		"Tell me about yourself",
+		"Introduce yourself"
+	  ],
+	  "responses": [
+		"Hello! I am an AI-powered chatbot designed to provide assistance and guidance on various topics, including fitness, nutrition, and injury recovery.",
+		"I'm here to assist you with any questions or concerns you may have regarding fitness, nutrition, and recovery from gym-related injuries.",
+		"Greetings! I'm an AI chatbot created to offer personalized guidance on fitness, nutrition, and recovery strategies.",
+		"Welcome! I'm an AI chatbot specializing in providing support and information on fitness, nutrition, and injury recovery. Feel free to ask me anything!"
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_Back",
+	  "patterns": [
+		"How to treat back pain from gym workout?",
+		"Treatment for lower back strain",
+		"Relief for gym-induced backache",
+		"Remedies for back injury during exercise"
+	  ],
+	  "responses": [
+		"Experiencing back pain from gym workouts can be challenging, but here are some remedies For lower back strain, rest is crucial. Apply ice packs for 15-20 minutes every few hours to reduce inflammation and pain."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "KneePainTreatment",
+	  "patterns": [
+		"Prevention and treatment of knee pain"
+	  ],
+	  "responses": [
+		"Certainly! Here's a comprehensive guide to help you prevent and treat knee pain: Maintain a healthy weight: Excess weight can strain your knees, so aim to maintain a healthy weight through a balanced diet and regular exercise.Strengthen muscles: Strengthening the muscles around your knees, including the quadriceps and hamstrings, can provide support and stability.Practice proper form: Whether you're exercising or performing daily activities, use proper techniques to avoid putting unnecessary strain on your knees.Wear supportive footwear: Choose shoes with good arch support and cushioning to reduce impact on your knees during activities.Warm up and cool down: Always warm up before exercising and cool down afterward to prepare your muscles and reduce the risk of injury.Rest: Give your knees time to rest and avoid activities that aggravate the pain.Ice: Apply ice packs to your knees for 15-20 minutes several times a day to reduce inflammation and numb the pain.Compression: Use a compression bandage or knee sleeve to provide support and reduce swelling.Elevation: Elevate your legs when resting to help reduce swelling and promote circulation.Pain relief: Over-the-counter pain medications like ibuprofen or acetaminophen can help alleviate pain and inflammation.Physical therapy: Work with a physical therapist to learn exercises that can strengthen the muscles around your knees and improve flexibility.Medical treatment: In some cases, medical treatments such as injections or surgery may be necessary, especially if the knee pain is due to an underlying condition like arthritis or a ligament injury. Remember it's essential to listen to your body and seek medical advice if you experience persistent or severe knee pain. Additionally following these preventive measures can help reduce the risk of future knee problems and keep you active and healthy"
+	  ],
+	  "context_set": "" 
+	},
+	{
+	  "tag": "GymInjuryTreatment_Shoulder",
+	  "patterns": [
+		"How to heal shoulder injury from gym?",
+		"Treatment for gym-related shoulder pain",
+		"Relief for shoulder strain after exercise",
+		"Remedies for shoulder injury during workout"
+	  ],
+	  "responses": [
+		"Shoulder injuries can be limiting, but there are measures you can take to support healing: For shoulder strain, avoid activities that aggravate the pain and apply heat packs for 15-20 minutes to alleviate stiffness."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymIllnessTreatment_Cold",
+	  "patterns": [
+		"How to recover from a cold caught at the gym?",
+		"Treatment for gym-induced cold symptoms",
+		"Relief for cold after gym visit"
+	  ],
+	  "responses": [
+		"Contracting a cold from the gym can be unpleasant, but there are steps you can take to feel better:",
+		"Rest is essential when battling a cold. Stay hydrated, drink warm fluids like herbal tea, and consider using saline nasal sprays to relieve congestion."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymIllnessTreatment_Flu",
+	  "patterns": [
+		"How to recover from flu contracted at the gym?",
+		"Treatment for gym-induced flu symptoms",
+		"Relief for flu after gym visit",
+		"Remedies for catching the flu at the gym"
+	  ],
+	  "responses": [
+		"Dealing with the flu after a gym visit can be challenging, but there are strategies to help you feel better:",
+		"Get plenty of rest, stay hydrated, and consider over-the-counter medications like ibuprofen or acetaminophen to reduce fever and relieve body aches."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymIllnessTreatment_Gastroenteritis",
+	  "patterns": [
+		"How to recover from gastroenteritis contracted at the gym?",
+		"Treatment for gym-induced stomach bug",
+		"Relief for gastroenteritis after gym visit",
+		"Remedies for catching gastroenteritis at the gym"
+	  ],
+	  "responses": [
+		"Dealing with gastroenteritis can be uncomfortable, but there are steps you can take to aid recovery:",
+		"Rest your stomach by avoiding solid foods for a few hours, then gradually reintroduce bland foods like bananas, rice, applesauce, and toast."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymIllnessTreatment_SkinInfection",
+	  "patterns": [
+		"How to treat skin infection acquired at the gym?",
+		"Treatment for gym-related skin rash"
+	  ],
+	  "responses": [
+		"Dealing with a skin infection from the gym can be concerning, but prompt treatment is important:",
+		"Keep the affected area clean and dry. Apply over-the-counter antifungal or antibacterial ointments as directed, and consider covering the area with a bandage to prevent further irritation."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_Biceps",
+	  "patterns": [
+		"How to treat biceps injury from gym workout?",
+		"Treatment for gym-related biceps pain",
+		"Relief for biceps strain after exercise"
+	  ],
+	  "responses": [
+		"Dealing with a biceps injury can be challenging, but there are steps you can take to support recovery:",
+		"For biceps strain, rest the affected arm and apply ice packs for 15-20 minutes every few hours to reduce swelling and discomfort."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_Triceps",
+	  "patterns": [
+		"How to heal triceps injury from gym?",
+		"Treatment for gym-related triceps pain",
+		"Relief for triceps strain after exercise",
+		"Remedies for triceps injury during workout"
+	  ],
+	  "responses": [
+		"Triceps injuries can be uncomfortable, but there are measures you can take to aid healing:",
+		"If you've experienced triceps strain, rest the affected arm and apply heat packs for 15-20 minutes to alleviate stiffness and promote blood flow."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_Quadriceps",
+	  "patterns": [
+		"How to recover from quadriceps injury at the gym?",
+		"Treatment for gym-related quadriceps pain",
+		"Relief for quadriceps strain after exercise",
+		"Remedies for quadriceps injury during workout"
+	  ],
+	  "responses": [
+		"Dealing with quadriceps injuries can be limiting, but there are steps you can take to support healing:",
+		"For quadriceps strain, rest the affected leg and elevate it to reduce swelling. Applying ice packs for 15-20 minutes can help alleviate pain and inflammation."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_Hamstrings",
+	  "patterns": [
+		"How to treat hamstring injury from gym workout?",
+		"Treatment for gym-related hamstring pain",
+		"Relief for hamstring strain after exercise",
+		"Remedies for hamstring injury during workout"
+	  ],
+	  "responses": [
+		"Hamstring injuries can be challenging, but there are measures you can take to aid recovery:",
+		"If you've experienced hamstring strain, rest the affected leg and apply ice packs for 15-20 minutes every few hours to reduce pain and inflammation."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_ChestMuscles",
+	  "patterns": [
+		"How to heal chest muscle injury from gym?",
+		"Treatment for gym-related chest muscle pain",
+		"Relief for chest muscle strain after exercise",
+		"Remedies for chest muscle injury during workout"
+	  ],
+	  "responses": [
+		"Dealing with chest muscle injuries can be challenging, but there are steps you can take to support recovery:",
+		"For chest muscle strain, rest the affected area and avoid activities that worsen the pain. Applying heat packs for 15-20 minutes can help relax the muscles and improve circulation."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_LowerBack",
+	  "patterns": [
+		"How to recover from lower back injury at the gym?",
+		"Treatment for gym-related lower back pain",
+		"Relief for lower back strain after exercise",
+		"Remedies for lower back injury during workout"
+	  ],
+	  "responses": [
+		"Dealing with lower back injuries can be challenging, but there are steps you can take to support healing:",
+		"For lower back strain, rest is crucial. Apply ice packs for 15-20 minutes every few hours to reduce inflammation and pain."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "GymInjuryTreatment_Spine",
+	  "patterns": [
+		"How to treat spine injury from gym workout?",
+		"Treatment for gym-related spine pain",
+		"Relief for spine strain after exercise",
+		"Remedies for spine injury during workout"
+	  ],
+	  "responses": [
+		"Spine injuries can be concerning, but there are measures you can take to support recovery:",
+		"If you've experienced spine strain, avoid activities that exacerbate the pain and consider gentle stretching exercises to improve flexibility and relieve tension."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "MealAdjustment_BackInjury",
+	  "patterns": [
+		"What should I eat to support recovery from a back injury?",
+		"Meal adjustment for back injury recovery",
+		"Nutrition tips for recovering from a back injury"
+	  ],
+	  "responses": [
+		"To support recovery from a back injury, focus on foods rich in anti-inflammatory nutrients such as omega-3 fatty acids, vitamin D, and antioxidants.",
+		"Incorporate foods like fatty fish (salmon, mackerel), leafy greens, berries, nuts, and seeds into your diet to reduce inflammation and promote tissue healing."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "MealAdjustment_KneeInjury",
+	  "patterns": [
+		"What should I eat to support recovery from a knee injury?",
+		"Meal adjustment for knee injury recovery",
+		"Nutrition tips for recovering from a knee injury"
+	  ],
+	  "responses": [
+		"To aid recovery from a knee injury, focus on foods that support joint health and reduce inflammation.",
+		"Include foods rich in vitamin C (citrus fruits, bell peppers), collagen (bone broth, chicken), and omega-3 fatty acids (flaxseeds, walnuts) to promote tissue repair and reduce swelling."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "MealAdjustment_MuscleStrain",
+	  "patterns": [
+		"What should I eat to support recovery from muscle strain?",
+		"Meal adjustment for muscle strain recovery",
+		"Nutrition tips for recovering from muscle strain"
+	  ],
+	  "responses": [
+		"To aid recovery from muscle strain, focus on foods that provide adequate protein for muscle repair and carbohydrates for energy replenishment.Incorporate lean sources of protein (chicken, turkey, tofu) and complex carbohydrates (whole grains, sweet potatoes) into your meals to support tissue healing and energy levels.",
+		"When it comes to supporting recovery from muscle strain, focusing on a nutritious diet can play a significant role. Opting for foods rich in protein, such as lean meats, fish, eggs, tofu, and legumes, can provide the essential building blocks needed for muscle repair and growth. Additionally, incorporating healthy fats from sources like nuts, seeds, avocados, and fatty fish can help reduce inflammation and support overall recovery. Including plenty of fruits and vegetables in your meals provides essential vitamins, minerals, and antioxidants that aid in tissue repair and reduce oxidative stress. Whole grains like brown rice, quinoa, and whole wheat bread offer complex carbohydrates to replenish energy stores and support muscle recovery. Hydration is also crucial for optimal recovery, so be sure to drink plenty of water throughout the day. Lastly, listening to your body and adjusting your meals based on hunger levels, cravings, and dietary preferences can help ensure a personalized approach to supporting muscle strain recovery"
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "MealAdjustment_FluRecovery",
+	  "patterns": [
+		"What should I eat to support recovery from flu?",
+		"Meal adjustment for flu recovery",
+		"Nutrition tips for recovering from flu"
+	  ],
+	  "responses": [
+		"To support recovery from flu, focus on foods that boost the immune system and provide nourishment without taxing the digestive system.",
+		"Include hydrating foods like clear broths, herbal teas, and fruits with high water content (watermelon, cucumber) to stay hydrated and support immune function."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "MealAdjustment_GastroenteritisRecovery",
+	  "patterns": [
+		"What should I eat to support recovery from gastroenteritis?",
+		"Meal adjustment for gastroenteritis recovery",
+		"Nutrition tips for recovering from gastroenteritis"
+	  ],
+	  "responses": [
+		"To aid recovery from gastroenteritis, focus on bland, easy-to-digest foods that won't irritate the stomach.Include foods like plain rice, bananas, toast, and boiled potatoes in your diet to provide energy and electrolytes without exacerbating gastrointestinal symptoms."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "MealAdjustment_SkinInfectionRecovery",
+	  "patterns": [
+		"What should I eat to support recovery from a skin infection?",
+		"Meal adjustment for skin infection recovery",
+		"Nutrition tips for recovering from a skin infection"
+	  ],
+	  "responses": [
+		"To support recovery from a skin infection, focus on foods that promote immune function and tissue repair.Include foods rich in vitamin A (carrots, sweet potatoes), vitamin C (citrus fruits, strawberries), and zinc (lean meats, legumes) to support skin health and healing."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "SupplementTreatment",
+	  "patterns": [
+		"What supplements can help with injury treatment?",
+		"Supplements for speeding up injury recovery",
+		"How to use supplements for injury healing?",
+		"Dosage for injury treatment supplements",
+		"When to take supplements for injury recovery?"
+	  ],
+	  "responses": [
+		"Certainly! Here are some supplement recommendations for injury treatment and recovery: For injury treatment and recovery, consider supplements like turmeric curcumin, MSM (Methylsulfonylmethane), and ginger extract. Turmeric curcumin has anti-inflammatory properties and can aid in reducing pain and swelling. Take 500-1000 mg of turmeric curcumin daily. MSM (Methylsulfonylmethane) supports joint health and may help with reducing inflammation. A common dosage is 1000-3000 mg per day. Ginger extract can alleviate muscle soreness and joint pain. Consume 500-1000 mg of ginger extract daily. It's recommended to take supplements for injury treatment with meals to enhance absorption and minimize gastrointestinal discomfort."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  "tag": "SupplementPerformance",
+	  "patterns": [
+		"Which supplements can improve workout performance?",
+		"Best supplements for enhancing gym performance",
+		"Dosage and timing for performance-enhancing supplements",
+		"When to take supplements for better performance?",
+		"How to use supplements to enhance workout performance?"
+	  ],
+	  "responses": [
+		"Certainly! Here are some supplement suggestions for improving workout performance: To enhance workout performance, consider supplements like creatine monohydrate, beta-alanine, and citrulline malate. Creatine monohydrate can increase strength, power, and muscle endurance. Take 3-5 grams of creatine monohydrate daily, ideally post-workout. Beta-alanine helps buffer lactic acid and delay muscle fatigue. Aim for 2-5 grams of beta-alanine per day, split into multiple doses. Citrulline malate improves blood flow and reduces fatigue. Take 6-8 grams of citrulline malate 30 minutes before exercise for optimal results. It's best to take supplements for enhancing workout performance approximately 30-60 minutes before your exercise session for maximum effectiveness."
+	  ],
+	  "context_set": ""
+	},
+	{
+	  
+	  "tag": "Cuts",
+	  "patterns": [
+		  "What to do if Cuts?",
+		  "How to cure Cuts?",
+		  "Which medicine to apply for Cuts?",
+		  "what to apply on cuts?",
+		  "Cuts"
+	  ],
+	  "responses": [
+		  "Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Abrasions",
+	  "patterns": [
+		  "how do you treat abrasions?",
+		  "Do Abrasions cause scars?",
+		  "Abrasions",
+		  "what to do if abrasions?",
+		  "Which medicine to apply for abrasions?",
+		  "How to cure abrasions?"
+	  ],
+	  "responses": [
+		  "Begin with washed hands.Gently clean the area with cool to lukewarm water and mild soap. Remove dirt or other particles from the wound using sterilized tweezers.For a mild scrape that’s not bleeding, leave the wound uncovered.If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding.Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. Cover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day.Watch the area for signs of infection, like pain or redness and swelling. See your doctor if you suspect infection."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "stings",
+	  "patterns": [
+		  "How do you treat Sting?",
+		  "What to do if you get a sting?"
+	  ],
+	  "responses": [
+		  "Remove any stingers immediately. Some experts recommend scraping out the stinger with a credit card. Applying ice to the site may provide some mild relief. Apply ice for 20 minutes once every hour as needed. Wrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. Taking an antihistamine such as diphenhydramine (Benadryl) or a nonsedating one such as loratadine (Claritin) will help with itching and swelling. Take acetaminophen (Tylenol) or ibuprofen (Motrin)for pain relief as needed. Wash the sting site with soap and water. Placing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Splinter",
+	  "patterns": [
+		  "How to remove Splinters",
+		  "How to cure Splinters?",
+		  "What to do if I have splinters?",
+		  "How do you bring a splinter to the surface?"
+	  ],
+	  "responses": [
+		  "1. SOAK IT IN EPSOM SALTS. Dissolve a cup of the salts into a warm bath and soak whatever part of the body has the splinter. Failing that, you can also put some of the salts onto a bandage pad and leave it covered for a day; this will eventually help bring the splinter to the surface. 2. VINEGAR OR OIL. Another simple way to draw out that stubborn splinter is to soak the affected area in oil (olive or corn) or white vinegar. Just pour some in a bowl and soak the area for around 20 to 30 minutes,"
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Sprains",
+	  "patterns": [
+		  "How do you treat a sprain?",
+		  "what to do if i get a sprain?",
+		  "Which cream to apply if i get a sprain?",
+		  "Which medicine to apply if I get a sprain?"
+	  ],
+	  "responses": [
+		  "Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. To help stop swelling, compress the ankle with an elastic bandage until the swelling stops. In most cases, pain relievers — such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Strains",
+	  "patterns": [
+		  "How do you treat a strain?",
+		  "what to do if i get a strain?",
+		  "Which cream to apply if i get a strain?",
+		  "Which medicine to apply if I get a strain?",
+		  "How do you diagnose a strain?",
+		  "Is heat or ice better for a pulled muscle?"
+	  ],
+	  "responses": [
+		  "Rest,Ice,Compression and Elevation can be used to cure strains. Avoid using your muscle for a few days, especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. This will minimize swelling. Don’t put ice directly on your skin. Use an ice pack or wrap ice in a towel. To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Fever",
+	  "patterns": [
+		  "How do you treat a mild Fever?",
+		  "what to do if i get a mild fever?",
+		  "Which medicine to take if I get a mild fever?",
+		  "fever"
+	  ],
+	  "responses": [
+		  "To treat a fever at home: 1)Drink plenty of fluids to stay hydrated. 2)Dress in lightweight clothing. 3)Use a light blanket if you feel chilled, until the chills end. 4)Take acetaminophen (Tylenol, others) or ibuprofen (Advil, Motrin IB, others). 5) Get medical help if the fever lasts more than five days in a row."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Nasal Congestion",
+	  "patterns": [
+		  "How do you treat nasal Congestion?",
+		  "what to do if i get a nasal congestion?",
+		  "Which medicine to take if I have a nasal congestion?",
+		  "what to do if i have a blocked nose?",
+		  "How do you treat a blocked nose?",
+		  "How long does nasal congestion last?"
+	  ],
+	  "responses": [
+		  "When you’re stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can: 1)Use a humidifier or vaporizer. 2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. 3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Cough",
+	  "patterns": [
+		  "How to cure cough?",
+		  "How do you treat cough?",
+		  "what to do if i get a cough?",
+		  "Which medicine to take if I get cough?",
+		  "How do you get rid of cough?"
+	  ],
+	  "responses": [
+		  "1) Honey:- Use honey to treat a cough, mix 2 teaspoons (tsp) with warm water or an herbal tea. Drink this mixture once or twice a day. Do not give honey to children under 1 year of age. 2) Ginger:- Brew up a soothing ginger tea by adding 20–40 grams (g) of fresh ginger slices to a cup of hot water. Allow to steep for a few minutes before drinking. Add honey or lemon juice to improve the taste and further soothe a cough. 3) Fluids:- Staying hydrated is vital for those with a cough or cold. Research indicates that drinking liquids at room temperature can alleviate a cough, runny nose, and sneezing."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Sore Throat",
+	  "patterns": [
+		  "How do you treat sore throat?",
+		  "what to do if i get a sore throat?",
+		  "Which medicine to take if I get a sore throat?",
+		  "How to cure sore throat?"
+	  ],
+	  "responses": [
+		  "1) Make sure you get plenty of rest and drink a lot of fluids. 2)Inhale steam,Run hot water in a sink.Drape a towel over you to trap the steam, and have the person lean over the sink with the water running. Tell him to breathe deeply through his mouth and nose for 5 to 10 minutes. Repeat several times a day. 3)Have him sip chicken broth or warm tea with honey. Don’t give honey to a child under 12 months of age."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Gastrointestinal problems",
+	  "patterns": [
+		  "How do you treat gas problems?",
+		  "what to do if i have Gastrointestinal problems?",
+		  "Which medicine to take if I get gas problem?",
+		  "How to cure Gas problems?"
+	  ],
+	  "responses": [
+		  "1) Replenish body fluids 2)Do not take antidiarrheal drugs or laxatives or pain medication, unless specified by a medical professional.3)Taking antacids may help, per recommendation of a healthcare professional. 4)If prone to frequent heartburns, seek medical help. 5)Taking meals that are not spicy regularly, can relieve ulcer pains. 6)Seek medical help, if conditions persist or continue to worsen"
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Skin problems",
+	  "patterns": [
+		  "How do you treat Skin problems?",
+		  "what to do if i get a skin allergy?",
+		  "Which medicine to take if I get a skin allergy?",
+		  "How to cure skin allergy?"
+	  ],
+	  "responses": [
+		  "1)Hydrocortisone cream. 2)Ointments like calamine lotion. 3)Antihistamines. 4)Cold compresses. 5)Oatmeal baths. 6)Talk to your doctor about what's best for your specific rash."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Abdonominal Pain",
+	  "patterns": [
+		  "How do you treat Abdonominal Pain?",
+		  "what to do if i get a Abdonominal Pain?",
+		  "Which medicine to take if I get a Abdonominal Pain?",
+		  "How to cure Abdonominal Pain?"
+	  ],
+	  "responses": [
+		  "1)Provide clear fluids to sip, such as water, broth, or fruit juice diluted with water. 2)Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce. 3)Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away. "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Bruises",
+	  "patterns": [
+		  "How do you treat Bruises?",
+		  "what to do if i get a Bruise?",
+		  "Which medicine to take if I get a Bruise?",
+		  "How to cure Bruises?"
+	  ],
+	  "responses": [
+		  "1)Ice the bruise with an ice pack wrapped in a towel. 2)Leave it in place for 10 to 20 minutes. 3)Repeat several times a day for a day or two as needed. 4)Compress the bruised area if it is swelling, using an elastic bandage. "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Broken Toe",
+	  "patterns": [
+		  "How do you treat a Broken Toe?",
+		  "what to do if i get a Broken Toe?",
+		  "Which medicine to take if I get a Broken Toe?",
+		  "How to cure Broken Toe?"
+	  ],
+	  "responses": [
+		  "1)To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot. 2)Depending on the severity of the fracture, the toe may need to be put back into place (reduced), and some compound toe fractures may require surgery.3) Most broken toes heal without complications in six weeks."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Choking",
+	  "patterns": [
+		  "How do you treat Choking?",
+		  "what to do if i get a Choke?",
+		  "Which medicine to take if I get Choked?",
+		  "How to cure Choking?"
+	  ],
+	  "responses": [
+		  "1)Encourage them to keep coughing to try to clear the blockage. 2)Ask them to try to spit out the object if it's in their mouth. 3)If coughing doesn't work, start back blows and Abdonominal thrusts"
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Wound",
+	  "patterns": [
+		  "How do you treat a wound?",
+		  "what to do if i get a Wound?",
+		  "Which medicine to take if I get wounded?",
+		  "How to cure a wound?"
+	  ],
+	  "responses": [
+		  "1)Rinse the cut or wound with water and apply pressure with sterile gauze, a bandage, or a clean cloth. 2)If blood soaks through the bandage, place another bandage on top of the first and keep applying pressure. 3)Raise the injured body part to slow bleeding. 4)When bleeding stops, cover the wound with a new, clean bandage."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Diarrhea",
+	  "patterns": [
+		  "How do you treat Diarrhea?",
+		  "what to do if i get Diarrhea?",
+		  "Which medicine to take if I get Diarrhea?",
+		  "How to cure Diarrhea?"
+	  ],
+	  "responses": [
+		  "1)Hydrating the body is essential for recovering from diarrhea.This causes the body to lose electrolytes such as sodium and chloride. 2)It is highly recommended to avoid dairy products, as they may worsen diarrhea in some people. 3)However, if diarrhea lasts for more than 2 days, seek medical advice to avoid complications."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Frost bite",
+	  "patterns": [
+		  "How do you treat a Frost bite?",
+		  "what to do if i get a Frost bite?",
+		  "Which medicine to take if I get a Frost bite?",
+		  "How to cure Frost bite?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Heat Exhaustion",
+	  "patterns": [
+		  "How do you treat Heat Exhaustion?",
+		  "what to do if i feel Exhausted due to heat?",
+		  "Which medicine to take if I get Exhausted?",
+		  "How to cure Heat Exhaustion?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Heat Stroke",
+	  "patterns": [
+		  "How do you treat Heat Stroke?",
+		  "what to do if i get a Heat Stroke?",
+		  "Which medicine to take if I get Stroke?",
+		  "How to cure a Heat Stroke?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Insect Bites",
+	  "patterns": [
+		  "How do you treat a Insect Bite?",
+		  "what to do if a insect bites me?",
+		  "Which medicine to take if I get bitten by a insect?",
+		  "How to cure insect bite?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "nose bleed",
+	  "patterns": [
+		  "How do you treat a bleeding nose?",
+		  "what to do if i my nose is bleeding?",
+		  "Which medicine to take if I get nose bleed?",
+		  "How to cure nose bleeding?"
+	  ],
+	  "responses": [
+		  "If you're experiencing a nosebleed, here are some steps to help treat it: Firstly, stay calm and sit upright to reduce blood pressure in the veins of your nose. Avoid tilting your head backward as this can cause blood to flow down your throat. Instead, gently lean forward and pinch your nostrils together with your thumb and index finger, applying pressure for about 10-15 minutes. Breathe through your mouth during this time. Avoid blowing your nose or inserting anything into your nostrils. After the bleeding stops, avoid bending over or straining for several hours. Apply a cold compress or ice pack to the bridge of your nose to constrict blood vessels and reduce swelling. If the bleeding persists for more than 20 minutes despite applying pressure, seek medical attention. It's also essential to avoid hot drinks, alcohol, and strenuous activities for at least 24 hours after the nosebleed to prevent recurrence. If you have frequent nosebleeds, consult a healthcare professional to determine any underlying causes and appropriate treatment options. "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Pulled Muscle",
+	  "patterns": [
+		  "How do you treat a Pulled Muscle?",
+		  "what to do if my muscle is pulled?",
+		  "Which medicine to take if I got pulled muscle?",
+		  "How to cure a pulled muscle?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Rectal bleeding",
+	  "patterns": [
+		  "How do you treat Rectal Bleeding?",
+		  "what to do if i get a Rectal Bleeding?",
+		  "Which medicine to take if I get Rectal Bleeding?",
+		  "How to cure Rectal Bleeding?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Sun Burn",
+	  "patterns": [
+		  "How do you treat Sun Burn?",
+		  "what to do if i get a Sun Burn?",
+		  "Which medicine to take if I get Sun Burn?",
+		  "How to cure a Sun Burn?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Testicle Pain",
+	  "patterns": [
+		  "How do you treat Testicle Pain?",
+		  "what to do if i get a Testicle Pain?",
+		  "Which medicine to take if I get a Testicle Pain?",
+		  "How to cure Testicle Pain?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Vertigo",
+	  "patterns": [
+		  "How do you treat a Vertigo?",
+		  "what to do if i get a Vertigo?",
+		  "Which medicine to take if I get Vertigo?",
+		  "How to cure a Vertigo?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Normal Bleeding",
+	  "patterns": [
+		  "How do you treat bleeding?",
+		  "what to do if i get a Bleeding?",
+		  "Which medicine to take if I get bleeding?",
+		  "How to cure Bleeding?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Eye Injury",
+	  "patterns": [
+		  "How do you treat an eye Injury?",
+		  "what to do if i get a eye Injury?",
+		  "Which medicine to take if I injured my eye?",
+		  "How to cure injured eye?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Chemical Burn",
+	  "patterns": [
+		  "How do you treat a chemical burn?",
+		  "what to do if i get a Chemical Burn?",
+		  "Which medicine to take if I get burn due to chemicals?",
+		  "How to cure Chemical Burn?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Poison",
+	  "patterns": [
+		  "How do you treat a Poison?",
+		  "what to do if i get Poison?",
+		  "Which medicine to take if I am poisoned?",
+		  "How to cure Poisoning?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Teeth",
+	  "patterns": [
+		  "How do you treat broken Teeth ?",
+		  "what to do if my Teeth got broken?",
+		  "Which medicine to take if I get broken teeth?",
+		  "cure broken teeth?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "seizure",
+	  "patterns": [
+		  "How do you treat a seizure?",
+		  "what to do if i get a seizure?",
+		  "Which medicine to take if I get seizure?",
+		  "How to cure seizure?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Head Injury",
+	  "patterns": [
+		  "How do you treat a head Injury?",
+		  "what to do if i get a Head Injury?",
+		  "Which medicine to take if I get injured in the head?",
+		  "How to cure Head Injury?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Fainting",
+	  "patterns": [
+		  "How do you treat Faint?",
+		  "what to do if i feel like Fainting?",
+		  "Which medicine to take if I get a Faint?",
+		  "How to cure Fainting?"
+	  ],
+	  "responses": [
+		  " "
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Headache",
+	  "patterns": [
+		  "How do you treat a mild Headache?",
+		  "what to do if i get a mild Headache?",
+		  "Which medicine to take if I have a mild headache?",
+		  "How to cure a mild headache?"
+	  ],
+	  "responses": [
+		  "Give ibuprofen (Advil, Motrin), aspirin, or acetaminophen (Tylenol) for pain. Avoid ibuprofen and other NSAIDs if the person has heart failure or kidney failure. Do not give aspirin to a child under age 18."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Cold",
+	  "patterns": [
+		  "How do you treat a Cold?",
+		  "what to do if i get a mild Cold?",
+		  "Which medicine to take if I have a Cold?",
+		  "How to cure Cold?"
+	  ],
+	  "responses": [
+		  "1)Keeping hydrated is absolutely vital to help 'flush' out the cold, as well as to break down congestion and keep your throat lubricated. 2)Vitamin C is extremely helpful when fighting infection, so at the first sign of a cold be sure to increase your intake by eating plenty of berries, citrus fruits, papayas, broccoli and red peppers which will help keep you protected. 3)When it comes to combating a cold,Vitamin D is essential in helping to regulate immune response."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Rash",
+	  "patterns": [
+		  "How do you treat Rashes?",
+		  "what to do if i get a Rash?",
+		  "Which medicine to take if I have a Rash?",
+		  "How to cure Rash?"
+	  ],
+	  "responses": [
+		  "1)Olive oil helps in healing and promotes skin renewal given it is packed with vitamin E and antioxidants. It also soothes the skin and reduces itching. 2)Baking soda is useful in drying skin rashes as also in relieving itching and inflammation. 3)Aloe Vera,Thanks to its antibacterial, antifungal, anti-inflammatory and emollient properties, aloe vera is excellent for treating a number of skin ailments including rashes as also soothing the skin."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "snake bite",
+	  "patterns": [
+		  "How do you treat a snake bite?",
+		  "what to do if i get a snake bite?",
+		  "Which medicine to take if I get a snake bite?",
+		  "How to cure snake bite?",
+		  "i got bit by a snake"
+	  ],
+	  "responses": [
+		  "While waiting for medical help: 1)Move the person beyond striking distance of the snake. 2)Have the person lie down with wound below the heart. 3)Keep the person calm and at rest, remaining as still as possible to keep venom from spreading. 4)Cover the wound with loose, sterile bandage. 5)Remove any jewelry from the area that was bitten. 6)Remove shoes if the leg or foot was bitten."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "animal bite",
+	  "patterns": [
+		  "How do you treat a animal bite?",
+		  "How do you treat a monkey bite?",
+		  "How do you treat a dog bite?",
+		  "what to do if i get a animal bite?",
+		  "Which medicine to take if I get a monekey bite?",
+		  "How to cure dog bite?",
+		  "i got bit by a dog"
+	  ],
+	  "responses": [
+		  "1)Wash the wound with soap and warm water. 2)Gently press a clean cloth over the wound to stop the flow of blood. 3)Apply an antibacterial ointment to the wound. 4)Cover with a sterile bandage. 5)Watch for signs of infection. 6)Seek help if you suspect infection or possible exposure to rabies, or if the wound is severe."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Drowning",
+	  "patterns": [
+		  "What to do if someone is Drowning?",
+		  "what to do if someone drowned?",
+		  "What steps to take if i see a drowning person?",
+		  "How to help a drowning person?"
+	  ],
+	  "responses": [
+		  "1)Place your ear next to the person's mouth and nose. Do you feel air on your cheek? 2)Look to see if the person's chest is moving.If the Person is Not Breathing, Check Pulse. 3)Check the person's pulse for 10 seconds.If There is No Pulse, Start CPR."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "CPR",
+	  "patterns": [
+		  "How to give CPR??",
+		  "what to do in a CPR?",
+		  "What steps to take in a CPR??",
+		  "How to help a drowning person in CPR?"
+	  ],
+	  "responses": [
+		  "1)For an adult or child, place the heel of one hand on the center of the chest at the nipple line. You can also push with one hand on top of the other. For an infant, place two fingers on the breastbone. 2)For an adult or child, press down at least 2 inches. Make sure not to press on ribs. For an infant, press down about 1 and 1/2 inches. Make sure not to press on the end of the breastbone. 3)Do chest compressions only, at the rate of 100-120 per minute or more. Let the chest rise completely between pushes. 4)Check to see if the person has started breathing."
+	  ],
+	  "context_set": ""
+  },
+  {
+	  "tag": "Fracture",
+	  "patterns": [
+		  "How do you treat a Fracture?",
+		  "what to do if i get a Fracture?",
+		  "Which medicine to take if I have a Fracture?",
+		  "How to cure a Fracture?"
+	  ],
+	  "responses": [
+		  "1)Stop any bleeding. Apply pressure to the wound with a sterile bandage, a clean cloth or a clean piece of clothing. 2)Immobilize the injured area. Don't try to realign the bone or push a bone that's sticking out back in. If you've been trained in how to splint and professional help isn't readily available, apply a splint to the area above and below the fracture sites. Padding the splints can help reduce discomfort. 3)Apply ice packs to limit swelling and help relieve pain. Don't apply ice directly to the skin. Wrap the ice in a towel, piece of cloth or some other material. 4)Treat for shock. If the person feels faint or is breathing in short, rapid breaths, lay the person down with the head slightly lower than the trunk and, if possible, elevate the legs."
+	  ],
+	  "context_set": ""		
+  }	  
+]}
