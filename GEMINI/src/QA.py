@@ -14,7 +14,7 @@ from IPython.display import display
 from IPython.display import Markdown
 
 #my api key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyB7CY4Ohg7KjUZqfUsMVlkvaIxjGSIF6Rc"
+os.environ["GOOGLE_API_KEY"] = "====="
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 ## Function to load OpenAI model and get respones
 model = genai.GenerativeModel("gemini-pro")
